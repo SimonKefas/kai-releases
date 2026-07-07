@@ -9,7 +9,7 @@
             <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/SimonKefas/kai-releases/releases/download/v0.1.0/Kai-0.1.0.zip" length="4700047" type="application/octet-stream" sparkle:edSignature="fuFHmvalplCoHsTeOM29EnYTTRnMKfXuO2f7YCq6sfgcMRY86p6pBgg1XnIUesf/0scHDaLALPmY+1mE9+iUDw=="/>
+            <enclosure url="https://github.com/SimonKefas/kai-releases/releases/download/v0.1.0/Kai-0.1.0.zip" length="4725611" type="application/octet-stream" sparkle:edSignature="aq5j0fzc9jZA/O6dordmqZ2AepGmxstfwGxb5/aCXzDyM+0BFMZGKiOOon1F7D2pVhmjV1QAGK/trMBsiF+LCA=="/>
         </item>
     </channel>
 </rss>
