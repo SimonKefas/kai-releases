@@ -3,13 +3,22 @@
     <channel>
         <title>Kai</title>
         <item>
+            <title>0.2.0</title>
+            <pubDate>Wed, 08 Jul 2026 02:25:44 +0200</pubDate>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>0.2.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
+            <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
+            <enclosure url="https://github.com/SimonKefas/kai-releases/releases/download/v0.2.0/Kai-0.2.0.zip" length="5138744" type="application/octet-stream" sparkle:edSignature="yIZhgVjI6zdLKukBaTUGIhWIyfkzAUvGhQgwbJ3y8z1wM7FR0EtMvMwaDiCFbOtmhZ0gSQvbA/j15wSJewGtAg=="/>
+        </item>
+        <item>
             <title>0.1.0</title>
             <pubDate>Tue, 07 Jul 2026 22:29:56 +0200</pubDate>
             <sparkle:version>1</sparkle:version>
             <sparkle:shortVersionString>0.1.0</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/SimonKefas/kai-releases/releases/download/v0.1.0/Kai-0.1.0.zip" length="4727522" type="application/octet-stream" sparkle:edSignature="NXbwuIkw/gIJKljbnkHZ2+1+lbbZopvgKpTd89hRS4cE5RlG/9ETlPqImDXys8CUxLLgid0Mm/1sk+x2WPEbAQ=="/>
+            <enclosure url="https://github.com/SimonKefas/kai-releases/releases/download/v0.2.0/Kai-0.1.0.zip" length="4727522" type="application/octet-stream" sparkle:edSignature="NXbwuIkw/gIJKljbnkHZ2+1+lbbZopvgKpTd89hRS4cE5RlG/9ETlPqImDXys8CUxLLgid0Mm/1sk+x2WPEbAQ=="/>
         </item>
     </channel>
 </rss>
