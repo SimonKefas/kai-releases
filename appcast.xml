@@ -3,13 +3,13 @@
     <channel>
         <title>Kai</title>
         <item>
-            <title>0.9.11</title>
-            <pubDate>Fri, 14 Aug 2026 20:53:25 +0200</pubDate>
-            <sparkle:version>92</sparkle:version>
-            <sparkle:shortVersionString>0.9.11</sparkle:shortVersionString>
+            <title>0.9.12</title>
+            <pubDate>Fri, 14 Aug 2026 21:17:20 +0200</pubDate>
+            <sparkle:version>93</sparkle:version>
+            <sparkle:shortVersionString>0.9.12</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>26.0</sparkle:minimumSystemVersion>
             <sparkle:hardwareRequirements>arm64</sparkle:hardwareRequirements>
-            <enclosure url="https://github.com/SimonKefas/kai-releases/releases/download/v0.9.11/Kai-0.9.11.zip" length="12929182" type="application/octet-stream" sparkle:edSignature="t8UM0hXfa0bfOCebCyxBLNRTaElGtLMaBrHGqaHoyJ3+uRJbMuYKxoDQACLVVaqgEM3BzKxiTYrx2Cmk271bBA=="/>
+            <enclosure url="https://github.com/SimonKefas/kai-releases/releases/download/v0.9.12/Kai-0.9.12.zip" length="13035308" type="application/octet-stream" sparkle:edSignature="GvWuxYvBn0kTGLs68FtZp+J5XBlLqXs0Tjd8CKPJ9cc2uLb4Y52bosupKkzfl4FhL1Hzo69UReySoZRrnXJEAw=="/>
         </item>
     </channel>
 </rss>
