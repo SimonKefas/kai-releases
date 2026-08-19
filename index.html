@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Kai — download</title>
+<meta name="description" content="Kai is a native macOS app for developing with AI agents. Download the latest release.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230d0f13'/%3E%3Cpath d='M10 8v16M22 8l-9.5 8L22 24' stroke='%23e8853a' stroke-width='2.6' stroke-linecap='round' stroke-linejoin='round' fill='none'/%3E%3C/svg%3E">
+<style>
+  :root{
+    --bg:#0d0f13; --panel:#14171d; --line:#242932;
+    --fg:#e8eaee; --dim:#8b929e; --faint:#5d646f;
+    --accent:#e8853a; --accent-dim:#a35c25;
+    --mono:ui-monospace,SFMono-Regular,"SF Mono",Menlo,monospace;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%}
+  body{
+    margin:0; background:var(--bg); color:var(--fg);
+    font:16px/1.6 -apple-system,BlinkMacSystemFont,"Segoe UI",system-ui,sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .wrap{max-width:620px; margin:0 auto; padding:72px 24px 96px}
+  @media (max-width:640px){ .wrap{padding:48px 20px 72px} }
+
+  header{margin-bottom:44px}
+  h1{
+    margin:0 0 10px; font-size:34px; line-height:1.15;
+    letter-spacing:-.021em; font-weight:600;
+  }
+  .lede{margin:0; color:var(--dim); font-size:17px; line-height:1.55}
+
+  .card{
+    background:var(--panel); border:1px solid var(--line);
+    border-radius:12px; padding:22px; margin:32px 0;
+  }
+  .verline{
+    display:flex; align-items:baseline; gap:10px;
+    font-family:var(--mono); font-size:13px; color:var(--faint);
+    margin-bottom:16px;
+  }
+  .verline b{color:var(--fg); font-weight:600; font-size:15px}
+
+  a.dl{
+    display:inline-block; text-decoration:none;
+    background:var(--accent); color:#1a0f06; font-weight:600;
+    padding:11px 20px; border-radius:9px; font-size:15px;
+    transition:transform 140ms cubic-bezier(.23,1,.32,1), background 140ms ease;
+  }
+  a.dl:hover{background:#f0954a}
+  a.dl:active{transform:scale(.975)}
+  a.dl[aria-disabled="true"]{
+    background:#2a2f38; color:var(--faint); pointer-events:none;
+  }
+  .size{margin-left:12px; font-family:var(--mono); font-size:12px; color:var(--faint)}
+
+  .req{
+    margin:0 0 32px; padding:14px 16px;
+    border:1px solid var(--accent-dim); border-radius:10px;
+    background:rgba(232,133,58,.06);
+  }
+  .req strong{color:var(--accent); font-weight:600}
+  .req p{margin:6px 0 0; color:var(--dim); font-size:14.5px; line-height:1.55}
+
+  h2{
+    margin:40px 0 12px; font-size:14px; font-weight:600;
+    letter-spacing:.04em; text-transform:uppercase; color:var(--faint);
+  }
+  p{margin:0 0 14px}
+  ul{margin:0 0 14px; padding-left:22px; color:var(--dim)}
+  li{margin-bottom:7px}
+  code{
+    font-family:var(--mono); font-size:.88em;
+    background:#1b1f26; border:1px solid var(--line);
+    border-radius:5px; padding:1.5px 5px; color:#d6dae1;
+  }
+  a{color:var(--fg); text-decoration:underline; text-decoration-color:var(--faint);
+    text-underline-offset:2.5px}
+  a:hover{text-decoration-color:var(--fg)}
+  .dimtext{color:var(--dim)}
+  .nowrap{white-space:nowrap; color:var(--faint)}
+  footer{
+    margin-top:56px; padding-top:22px; border-top:1px solid var(--line);
+    color:var(--faint); font-size:13.5px;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <h1>Kai</h1>
+    <p class="lede">A native macOS app for developing with AI agents — embedded terminals
+    running Claude, Codex and Grok sessions, grouped into project workspaces, with an
+    orchestrator that coordinates them.</p>
+  </header>
+
+  <div class="req">
+    <strong>Requires macOS 26 or later, on Apple Silicon.</strong>
+    <p>Kai will not install on an older macOS, and there is no Intel build.
+    Check <span class="nowrap">Apple menu → About This Mac</span> before downloading.</p>
+  </div>
+
+  <div class="card">
+    <div class="verline">Latest release &nbsp;<b id="ver">…</b><span id="date"></span></div>
+    <a class="dl" id="dl" href="#" aria-disabled="true">Download Kai</a><span class="size" id="size"></span>
+  </div>
+
+  <h2>Installing</h2>
+  <ul>
+    <li>Unzip the download and drag <code>Kai.app</code> into <code>/Applications</code>.</li>
+    <li>Open it normally. The app is signed and notarized by Apple, so there is no
+        security warning to click through.</li>
+    <li>Kai checks for updates on its own and installs them in place — you only need
+        this page once.</li>
+  </ul>
+
+  <h2>What you'll need</h2>
+  <p class="dimtext">Kai runs agent CLIs; it doesn't replace them. At least one of
+  <code>claude</code>, <code>codex</code> or <code>grok</code> should be installed and
+  signed in, and Kai will use whichever it finds. Everything runs locally on your own
+  machine under your own accounts.</p>
+
+  <h2>All versions</h2>
+  <p class="dimtext">Every release, with its notes, is on the
+  <a href="https://github.com/SimonKefas/kai-releases/releases">releases page</a>.</p>
+
+  <footer>
+    Made by <a href="https://github.com/SimonKefas">Simon Nilsen</a>.
+    Updates are served from <a href="appcast.xml">appcast.xml</a>.
+  </footer>
+
+</div>
+
+<script>
+// Read the same feed Sparkle reads, so this page can never advertise a version
+// the updater doesn't know about.
+fetch('appcast.xml', {cache:'no-cache'})
+  .then(r => r.ok ? r.text() : Promise.reject(r.status))
+  .then(text => {
+    const doc = new DOMParser().parseFromString(text, 'application/xml');
+    const items = [...doc.querySelectorAll('item')];
+    if (!items.length) throw 'no items';
+    // Highest sparkle:version wins; the feed is not guaranteed to be ordered.
+    const ns = 'http://www.andymatuschak.org/xml-namespaces/sparkle';
+    const build = el => parseInt(el.getElementsByTagNameNS(ns,'version')[0]?.textContent ?? '0', 10);
+    const item = items.reduce((a,b) => build(b) > build(a) ? b : a);
+    const short = item.getElementsByTagNameNS(ns,'shortVersionString')[0]?.textContent;
+    const enc = item.querySelector('enclosure');
+    const url = enc?.getAttribute('url');
+    const len = parseInt(enc?.getAttribute('length') ?? '0', 10);
+    const pub = item.querySelector('pubDate')?.textContent;
+
+    if (short) document.getElementById('ver').textContent = short;
+    if (pub) {
+      const d = new Date(pub);
+      if (!isNaN(d)) document.getElementById('date').textContent =
+        ' · ' + d.toLocaleDateString(undefined, {year:'numeric', month:'short', day:'numeric'});
+    }
+    if (len) document.getElementById('size').textContent = (len/1048576).toFixed(1) + ' MB';
+    if (url) {
+      const a = document.getElementById('dl');
+      a.href = url;
+      a.removeAttribute('aria-disabled');
+    }
+  })
+  .catch(() => {
+    document.getElementById('ver').textContent = '—';
+    const a = document.getElementById('dl');
+    a.textContent = 'Download from GitHub';
+    a.href = 'https://github.com/SimonKefas/kai-releases/releases/latest';
+    a.removeAttribute('aria-disabled');
+  });
+</script>
+</body>
+</html>
